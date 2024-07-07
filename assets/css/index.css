@@ -1,0 +1,165 @@
+/*
+  ! Google Fonts: https://fonts.google.com/ 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+? http://meyerweb.com/eric/tools/css/reset/
+? v2.0 | 20110126
+? License: none (public domain)
+*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Poppins", "Roboto", "Roboto Mono", "Krona One", sans-serif;
+  color: #fff;
+  background-color: #242424;
+  overflow-x: hidden;
+}
+
+/* ! END RESET */
+section {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(to left, rgb(0, 0, 0) 36%, rgba(0, 0, 0, 0) 60%), url("../img/background.jpeg");
+  transform: scale(1.1) translateX(-60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+section .section-container-main {
+  width: calc(30% + 5rem);
+  height: 650px;
+  margin-right: 13rem;
+}
+section .section-container-main .form-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+section .section-container-main .form-main [class^=form] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section .section-container-main .form-main .form-context h1 {
+  font-size: clamp(1.3rem, 1.7vw, 2.3rem);
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+}
+section .section-container-main .form-main .form-context h1 span {
+  color: var(--text-wait-color);
+}
+section .section-container-main .form-main .form-context h2 {
+  font-size: clamp(0.7rem, 1.4vw, 1.1rem);
+  font-weight: 400;
+  color: var(--text-color);
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+}
+section .section-container-main .form-main .form-input {
+  gap: 20px;
+}
+section .section-container-main .form-main .form-input input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--input-background-color);
+  outline: none;
+}
+section .section-container-main .form-main .form-input input::placeholder {
+  color: var(--input-background-placeholder-color);
+}
+section .section-container-main .form-main .form-submit {
+  align-items: end;
+}
+section .section-container-main .form-main .form-submit input {
+  cursor: pointer;
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--text-color);
+  background-color: var(--button-background-color);
+  font-size: clamp(0.7rem, 1.6vw, 1.1rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+section .section-container-main .form-main .form-submit input:hover {
+  opacity: 0.8;
+}
+section .section-container-main .form-main .form-info p {
+  font-size: clamp(0.5rem, 1.3vw, 0.8rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.1;
+}
+section .section-container-main .form-main .form-info p span {
+  color: var(--text-wait-color);
+  text-decoration: underline;
+}
+section .section-container-main .form-main .form-info p strong {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1176px) {
+  input {
+    background-color: var(--input-background-secund-color) !important;
+  }
+  input::placeholder {
+    color: var(--input-background-secund-placeholder-color) !important;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 16%, rgba(0, 0, 0, 0) 60%), url("../img/background.jpeg");
+    transform: unset;
+  }
+  section .section-container-main {
+    margin: 0px;
+    margin-top: 10rem;
+    width: 90%;
+  }
+  section .section-container-main .form-submit input {
+    width: 10.3rem !important;
+    height: 3.3rem !important;
+    background-color: var(--button-background-color) !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
